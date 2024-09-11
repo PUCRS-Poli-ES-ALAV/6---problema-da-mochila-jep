@@ -15,6 +15,6 @@ public class EditionDistance {
     public static void main(String[] args) {
         String str1 = "casa";
         String str2 = "meta";
-        System.out.println(ED(str1, str2, str1.length(), str2.length()));
+        System.out.println(ED(str1, str2, str1.length() - 1, str2.length() - 1));
     }
 }
