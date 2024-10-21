@@ -3,8 +3,9 @@ public class Fibo {
 
     public static int fiboRec(int n) {
         operationsCounter++;
-        if (n <= 1)
+        if (n <= 1) {
             return n;
+        }
 
         return fiboRec(n-1) + fiboRec(n-2);
     }
@@ -35,13 +36,16 @@ public class Fibo {
 
     public static int lookupFibo(int[] f, int n) {
         operationsCounter++;
-        if (f[n] >= 0)
+        if (f[n] >= 0) {
             return f[n];
+        }
 
-        if (n <= 1)
+        if (n <= 1) {
             f[n] = n;
-        else
+        }
+        else {
             f[n] = lookupFibo(f, n-1) + lookupFibo(f, n-2);
+        }
 
         return f[n];
     }
