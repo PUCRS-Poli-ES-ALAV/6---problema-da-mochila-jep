@@ -1,6 +1,4 @@
-package br.pucrs.poa;
-
-public class Fibo{
+public class Fibo {
     public static int fiboRec(int n){
         if(n <= 1){
             return n;
